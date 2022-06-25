@@ -1,6 +1,7 @@
 @import './hero.styl'
 @import './header.styl'
 @import './features.styl'
+@import './download.styl'
 :root
     --softBlue: hsl(231, 69%, 60%)
     --softRed: hsl(0, 94%, 66%)
@@ -35,9 +36,10 @@ ul
     //box-sizing: border-box;
 .u-h1
   font-size: 2em
-  font-weight: 400
+  font-weight: 500
 .u-h2
   @extends .u-h1
+  font-size: 1.5em
 .u-p
   color: var(--grayishBlue)
   line-height: 1.8 //espacios de interlineados
@@ -59,6 +61,8 @@ ul
   &.is-gray
     color: var(--veryDarkBlue)
     background: #f7f7f7
+  &.is-fullWidth
+    width: 100%
 
 
 
