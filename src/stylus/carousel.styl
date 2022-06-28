@@ -1,0 +1,23 @@
+.carousel
+  text-align: left
+  margin 2em 0
+  
+  &-content
+    //text-align: justify
+    &[open]
+      .carousel
+        &-header
+            border none
+            &::-webkit-details-marker
+              color var(--softRed)
+  &-header
+    padding: 1.5em 0
+    border-bottom: 1px solid var(--lightGray)
+    font-size: .9em
+
+    &:focus
+        outline: 0 //para quitar el borde del questions
+    &::-webkit-details-marker
+      color red
+      float right
+ 
