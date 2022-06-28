@@ -50,9 +50,6 @@
               transform translateY(0)
               visibility visible
               opacity 1
-            
-
-
     &-open
         user-select: none
         width: 40px
@@ -60,4 +57,32 @@
         display inline-flex
         cursor pointer
         background url('../images/icon-hamburger.svg') no-repeat center
+
+
+    @media screen and (min-width: 1024px)
+      transform translateY(0) 
+      visibility visible
+      opacity 1
+      position: initial
+      height: auto
+      background: initial
+      a
+        color: var(--veryDarkBlue)
+        margin-top: 1em
+      li
+        border none
+        &:last-child
+          a
+            border: none
+            border-radius: .5em
+            margin-top: 1em
+            padding: .7em 2em
+            background: var(--softRed)
+            color: white
+            margin-left: 2em
+      ul
+        display: flex
+      &-open
+        display: none
+  
     

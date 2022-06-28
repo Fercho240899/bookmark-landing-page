@@ -4,6 +4,8 @@
    .u-wrapper
      > .u-p
        margin-bottom 3em
+       max-width: 500px
+       margin auto
    &-grid
      margin-top: 3em
      display grid
@@ -21,3 +23,15 @@
     .u-h3
       margin-bottom: .5rem
       margin-top: 1.5rem
+   @media screen and (min-width: 1024px)
+      &-grid
+         grid-template-columns: 1fr 1fr 1fr
+         grid-column-gap: 2em
+         padding-bottom: 10em
+      &-item    //para alinear las card una sobre otra
+        &:nth-of-type(2)
+          position relative
+          top 4em
+        &:nth-of-type(3)
+          position relative
+          top 7em
