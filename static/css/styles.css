@@ -202,7 +202,6 @@
   text-align: center;
 }
 .join {
-  border: 1px solid #f00;
   background: var(--softBlue);
   color: #fff;
   padding: 3em 0;
@@ -227,6 +226,36 @@
 }
 .form-input::-webkit-input-placeholder {
   color: var(--lightGray);
+}
+.footer {
+  background: var(--veryDarkBlue);
+  text-align: center;
+  padding: 3em 0;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-menu {
+  margin-top: 2em;
+}
+.footer-menu a {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1em 0;
+  color: var(--lightGray);
+}
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.footer-social .twitter {
+  background: url("../images/icon-twitter.svg") no-repeat center;
+}
+.footer-social .facebook {
+  background: url("../images/icon-facebook.svg") no-repeat center;
 }
 :root {
   --softBlue: #5368df;
