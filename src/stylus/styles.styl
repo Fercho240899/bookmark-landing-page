@@ -3,6 +3,7 @@
 @import './features.styl'
 @import './download.styl'
 @import './questions.styl'
+@import './join.styl'
 :root
     --softBlue: hsl(231, 69%, 60%)
     --softRed: hsl(0, 94%, 66%)
@@ -42,6 +43,11 @@ ul
 .u-h2
   @extends .u-h1
   font-size: 1.5em
+.u-h4
+  @extends .u-h1
+  font-size: 1.3em
+  margin-top: .5em
+
 .u-p
   color: var(--grayishBlue)
   line-height: 1.8 //espacios de interlineados
@@ -60,6 +66,9 @@ ul
   box-shadow: 0 5px 10px -5px var(--softBlue)
   &:first-of-type
     margin 0
+  &.is-red
+    color: #f7f7f7
+    background: var(--softRed)
   &.is-gray
     color: var(--veryDarkBlue)
     background: #f7f7f7

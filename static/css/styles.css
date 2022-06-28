@@ -201,6 +201,33 @@
   padding: 4em 0;
   text-align: center;
 }
+.join {
+  border: 1px solid #f00;
+  background: var(--softBlue);
+  color: #fff;
+  padding: 3em 0;
+  text-align: center;
+}
+.join small {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.form .u-button {
+  margin: 0;
+}
+.form-input {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  outline: 0;
+}
+.form-input::-webkit-input-placeholder {
+  color: var(--lightGray);
+}
 :root {
   --softBlue: #5368df;
   --softRed: #fa5757;
@@ -229,12 +256,17 @@ ul {
   padding: 0 1em;
 }
 .u-h1,
-.u-h2 {
+.u-h2,
+.u-h4 {
   font-size: 2em;
   font-weight: 500;
 }
 .u-h2 {
   font-size: 1.5em;
+}
+.u-h4 {
+  font-size: 1.3em;
+  margin-top: 0.5em;
 }
 .u-p {
   color: var(--grayishBlue);
@@ -255,6 +287,10 @@ ul {
 }
 .u-button:first-of-type {
   margin: 0;
+}
+.u-button.is-red {
+  color: #f7f7f7;
+  background: var(--softRed);
 }
 .u-button.is-gray {
   color: var(--veryDarkBlue);
