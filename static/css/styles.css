@@ -129,6 +129,7 @@
   right: 0;
   padding: 1em 0;
   transition: 0.3s background;
+  z-index: 2;
 }
 .header-logo {
   display: inline-flex;
@@ -364,7 +365,7 @@
 .footer {
   background: var(--veryDarkBlue);
   text-align: center;
-  padding: 3em 0;
+  padding: 2em 5em;
 }
 .footer a {
   color: #fff;
@@ -377,11 +378,11 @@
   display: block;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 1em 0;
+  padding: 1em;
   color: var(--lightGray);
 }
 .footer-social {
-  margin-top: 2em;
+  margin-top: 2em 2em;
 }
 .footer-social a {
   width: 40px;
@@ -395,21 +396,21 @@
   background: url("../images/icon-facebook.svg") no-repeat center;
 }
 @media screen and (min-width: 1024px) {
-  img {
+  .footer img {
     margin-right: 1em;
   }
-}
--content {
-  display: flex;
-  justify-content: space-between;
-}
--menu {
-  display: flex;
-  margin: 0;
-}
--primary {
-  display: flex;
-  align-items: center;
+  .footer-menu {
+    display: flex;
+    margin: 0;
+  }
+  .footer-primary {
+    display: flex;
+    align-items: center;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 :root {
   --softBlue: #5368df;

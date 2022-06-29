@@ -1,7 +1,7 @@
 .footer
     background: var(--veryDarkBlue)
     text-align: center
-    padding: 3em 0
+    padding: 2em 5em
     a
      color white 
      text-decoration: none
@@ -11,10 +11,10 @@
          display: block 
          text-transform: uppercase
          letter-spacing: 1px
-         padding: 1em 0
+         padding: 1em 
          color: var(--lightGray)
     &-social
-        margin-top 2em
+        margin-top 2em 2em
         a
          width: 40px
          height: 40px
@@ -25,18 +25,23 @@
         .facebook
             background: url('../images/icon-facebook.svg') no-repeat center
 
-  @media screen and (min-width: 1024px)
-     img
-      margin-right 1em
-    &-content
-      display flex
-      justify-content: space-between
-    &-menu
-      display: flex
-      margin 0
-    &-primary
-      display flex
-      align-items: center
+    @media screen and (min-width 1024px)
+      
+      img 
+         margin-right: 1em
+      &-menu
+        display: flex
+        margin 0
+      &-primary
+        display: flex
+        align-items: center
+      &-content
+        display flex
+        justify-content: space-between
+
+
+
+  
 
     
      
